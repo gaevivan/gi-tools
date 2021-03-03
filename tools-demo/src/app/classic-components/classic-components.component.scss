@@ -1,0 +1,27 @@
+
+:host {
+  display: flex;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  min-width: 250px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.figure {
+  width: 60px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 25px;
+  padding: 0.2rem;
+}

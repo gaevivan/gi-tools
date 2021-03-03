@@ -1,0 +1,12 @@
+<div class="page">
+  <ng-container *ngIf="componentsList.length">
+    <div class="bar layer component-list">
+      <ng-container *ngFor="let component of componentsList">
+          <a class="component-list__item" [routerLink]="component.routerLink">{{component.text}}</a>
+      </ng-container>
+    </div>
+  </ng-container>
+  <div class="content layer">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="icons__search">
+  <input class="gray" type="text" [formControl]="searchFormControl" placeholder="Поиск...">
+</div>
+<div class="icons__list">
+  <ng-container *ngFor="let icon of iconsList$ | async">
+    <div class="list__item layer" [title]="icon">
+      <div class="item__sizes-list">
+        <span class="gi-icon-large {{icon}}"></span>
+        <span class="gi-icon-small {{icon}}"></span>
+      </div>
+      <div class="item__text">{{icon}}</div>
+    </div>
+  </ng-container>
+</div>

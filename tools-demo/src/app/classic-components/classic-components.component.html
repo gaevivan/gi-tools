@@ -1,0 +1,53 @@
+
+<div class="item layer">
+  <h3>Цвета</h3>
+  <ng-container *ngFor="let color of colorsList">
+    <div class="figure {{color}}">{{color}}</div>
+    <br />
+  </ng-container>
+</div>
+<div class="item layer">
+  <h3>Кнопки</h3>
+  <br />
+  <ng-container *ngFor="let button of buttonsList">
+    <div>
+      <button class="{{button.color}}">{{button.text}}</button>
+    </div>
+    <br />
+  </ng-container>
+</div>
+<div class="item layer">
+  <h3>Кнопки с иконкой</h3>
+  <br />
+  <ng-container *ngFor="let button of buttonsList">
+    <div>
+      <button class="{{button.color}}">
+          <span class="gi-icon-small gi-icon-add"></span>
+      </button>
+    </div>
+    <br />
+  </ng-container>
+</div>
+<div class="item layer">
+  <h3>Кнопки с текстом и иконкой</h3>
+  <br />
+  <ng-container *ngFor="let button of buttonsList">
+    <div>
+      <button class="{{button.color}}">
+        <span class="gi-icon-small gi-icon-add"></span>
+        <div>text</div>
+      </button>
+    </div>
+    <br />
+  </ng-container>
+</div>
+<div class="item layer">
+  <h3>Поля ввода</h3>
+  <br />
+  <ng-container *ngFor="let input of inputsList">
+    <div>
+      <input class="{{input.color}}" [formControl]="input.formControl" />
+    </div>
+    <br />
+  </ng-container>
+</div>
